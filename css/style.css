@@ -35,10 +35,10 @@ body {
     border: none;
     border-radius: 10px;
     color: #fff;
-    padding: 1rem;
-    margin-bottom: 2rem;
+    padding: 1em;
+    margin-bottom: 2em;
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 1em;
     box-shadow: 0 5px 10px #0000000d, 0 15px 40px #0000001a;
 }
 
@@ -50,3 +50,97 @@ body {
     outline: none;
 }
 
+.card {
+    max-width: 800px;
+    background-color: #5b329c;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px #9aa0b90d, 0 15px 40px #0000001a;
+    display: flex;
+    padding: 3em;
+    margin: 0 2em;
+}
+
+.avatar {
+    border-radius: 50%;
+    border: 10px solid #2a2a7a;
+    height: 150px;
+    width: 150px;
+}
+
+.user-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    color: #eee;
+    margin-left: 2em;
+    gap: 1em;
+}
+
+.user-info ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    gap: 1em;
+}
+
+.user-info ul li {
+    display: flex;
+    align-items: center;
+}
+
+.user-info ul li strong {
+    font-size: 0.9em;
+    margin-left: 0.5em;
+}
+
+.repo {
+    text-decoration: none;
+    color: #fff;
+    background-color: #212a72;
+    font-size: 0.8em;
+    padding: 0.25em 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    display: inline-block;
+}
+
+@media (max-width: 630px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+        max-width: 500px;
+    }
+    
+    .user-info {
+        margin:0;
+    }
+}
+
+@media (max-width: 500px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .user-info {
+        margin:0;
+    }
+
+    .user-form {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 450px) {
+    .card {
+        padding: 1em;
+        max-width: 350px;
+    }
+    
+    .user-info {
+        margin:0;
+    }
+}
